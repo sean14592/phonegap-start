@@ -47,7 +47,7 @@ var app = {
         console.log('Received Event: ' + id);
     }
     
-    window.localStorage.setItem(“name”,“Sean”);
+    window.localStorage.setItem("name","Sean");
     
     
 };
