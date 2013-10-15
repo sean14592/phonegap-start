@@ -46,12 +46,4 @@ var app = {
 
         console.log('Received Event: ' + id);
     }
-    
-    window.localStorage.setItem("name","Sean");
-    
-    var stringFromLocal = window.localStorage.getItem("name");
-    
-    alert(stringFromLocal);
-    
-    
 };
