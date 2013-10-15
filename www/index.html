@@ -38,9 +38,27 @@
         <script type="text/javascript">
             app.initialize();
             
+            /* STEP 1*/
             window.localStorage.setItem("name","Sean");
             var stringFromLocal = window.localStorage.getItem("name");
-            alert(stringFromLocal);
+            //alert(stringFromLocal);
+            
+            /*Step 2*/
+            function chocObj(energy, protein, fat) {
+                    this.energy = energy;
+                    this.protein = protein;
+                    this.fat = fat;
+            }
+            
+            marsBarObj = chocObj("1888", "4.3", "17.1");
+            
+            window.localStorage.setItem("marsbar", JSON.stringify(marsBarObj);
+            
+            
+            var JsonStringOutput = window.localStorage.getItem("marsbar");
+            var decodedJsonString = JSON.parse(JsonStringOutput);
+            alert(JsonStringOutput+"-->"+decodedJsonString);
+            
 
         </script>
 
