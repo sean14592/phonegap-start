@@ -37,8 +37,17 @@
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
+            
+        (function() {
+            window.localStorage.setItem("name","Sean");
+            var stringFromLocal = window.localStorage.getItem("name");
+            document.getElementById('localStringResult').innerHTML(stringFromLocal);
+        })();
+
         </script>
 
+        <div id="localStringResult"></div>
         
-    </body>
+            
+        </body>
 </html>
