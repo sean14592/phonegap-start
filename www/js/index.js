@@ -49,5 +49,9 @@ var app = {
     
     window.localStorage.setItem("name","Sean");
     
+    var stringFromLocal = window.localStorage.getItem("name");
+    
+    alert(stringFromLocal);
+    
     
 };
